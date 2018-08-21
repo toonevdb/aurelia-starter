@@ -1,0 +1,8 @@
+# .htaccess file serves as a example. It is not copied to the /dist folder!
+# You must add these rules in vhost config file under the <Directory> tag.
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ / [L,QSA]
+</IfModule>

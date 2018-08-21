@@ -1,0 +1,135 @@
+{
+  "name": "aurelia-starter",
+  "version": "0.0.1",
+  "description": "Aurelia starter using Typescript 3 and Webpack 4",
+  "homepage": "https://github.com/toonevdb/aurelia-starter",
+  "main": "dist/app.bundle.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/toonevdb/aurelia-starter.git"
+  },
+  "author": "toonevdb",
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "scripts": {
+    "start": "nps",
+    "test": "nps test"
+  },
+  "jest": {
+    "modulePaths": [
+      "<rootDir>/src",
+      "<rootDir>/node_modules"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "\\.spec\\.(ts|js)x?$",
+    "setupFiles": [
+      "<rootDir>/test/jest-pretest.ts"
+    ],
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "aurelia-(.*)": "<rootDir>/node_modules/aurelia-$1"
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,ts}",
+      "!**/*.spec.{js,ts}",
+      "!**/node_modules/**",
+      "!**/test/**"
+    ],
+    "coverageDirectory": "<rootDir>/test/coverage-jest",
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "html"
+    ],
+    "mapCoverage": true
+  },
+  "devDependencies": {
+    "@types/jest": "23.1.4",
+    "@types/lodash": "4.14.110",
+    "@types/node": "10.5.1",
+    "@types/tapable": "1.0.3",
+    "@types/webpack": "4.4.4",
+    "aurelia-loader-nodejs": "1.0.1",
+    "aurelia-pal-nodejs": "1.1.1",
+    "aurelia-protractor-plugin": "1.0.6",
+    "aurelia-testing": "1.0.0-beta.4.0.0",
+    "aurelia-webpack-plugin": "^3.0.0",
+    "autoprefixer": "8.6.4",
+    "awesome-typescript-loader": "^5.2.0",
+    "copy-webpack-plugin": "4.5.2",
+    "cross-env": "5.2.0",
+    "css-loader": "0.28.11",
+    "expose-loader": "0.7.5",
+    "extract-text-webpack-plugin": "3.0.2",
+    "file-loader": "1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "3.2.0",
+    "http-server": "0.11.1",
+    "istanbul-instrumenter-loader": "3.0.1",
+    "jasmine-core": "3.1.0",
+    "jest": "23.2.0",
+    "jest-cli": "23.2.0",
+    "json-loader": "0.5.7",
+    "karma": "2.0.4",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-coverage-istanbul-reporter": "2.0.1",
+    "karma-jasmine": "1.1.2",
+    "karma-mocha-reporter": "2.2.5",
+    "karma-webpack": "3.0.0",
+    "node-sass": "^4.9.0",
+    "nps": "5.9.2",
+    "nps-utils": "1.6.0",
+    "postcss-loader": "2.1.5",
+    "protractor": "5.3.2",
+    "sass-loader": "^7.0.3",
+    "shipit-cli": "^4.1.1",
+    "shipit-deploy": "^4.1.1",
+    "shipit-shared": "^4.4.2",
+    "standard-version": "^4.4.0",
+    "style-loader": "0.21.0",
+    "ts-jest": "23.0.0",
+    "ts-node": "7.0.0",
+    "tslint": "^5.10.0",
+    "typescript": "2.9.2",
+    "url-loader": "1.0.1",
+    "wait-on": "2.1.0",
+    "webpack": "^4.14.0",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "3.1.4"
+  },
+  "dependencies": {
+    "@types/bootstrap": "^4.1.1",
+    "@types/jquery": "^3.3.4",
+    "aurelia-bootstrapper": "2.3.0",
+    "aurelia-environment": "github:toonevdb/aurelia-environment",
+    "aurelia-fetch-client": "1.4.0",
+    "aurelia-framework": "1.3.0",
+    "aurelia-history-browser": "1.2.0",
+    "aurelia-i18n": "^2.3.1",
+    "aurelia-loader-webpack": "2.2.1",
+    "aurelia-logging-console": "1.0.0",
+    "aurelia-pal-browser": "1.8.0",
+    "aurelia-polyfills": "1.3.0",
+    "aurelia-router": "1.6.1",
+    "aurelia-templating": "1.8.1",
+    "aurelia-templating-binding": "1.4.3",
+    "aurelia-templating-resources": "1.7.0",
+    "aurelia-templating-router": "^1.3.2",
+    "bootstrap": "^4.1.1",
+    "i18next-xhr-backend": "^1.5.1",
+    "isomorphic-fetch": "2.2.1",
+    "jquery": "3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}

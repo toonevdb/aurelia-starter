@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "sourceRoot": "src",
+    "allowJs": true,
+    "baseUrl": "src",
+    "lib": [
+      "es2017", "dom"
+    ]
+  },
+  "files": [
+    "custom_typings/bootstrap4-duallistbox.d.ts",
+    "custom_typings/air-datepicker.d.ts",
+    "custom_typings/chartjs-rangeslider.d.ts"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "static"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "silent": true
+  }
+}
